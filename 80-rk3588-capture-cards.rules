@@ -1,0 +1,8 @@
+ACTION!="add", GOTO="end"
+SUBSYSTEM!="video4linux", GOTO="end"
+
+ENV{ID_V4L_PRODUCT}=="rk_hdmirx", SYMLINK+="hdmirx", GOTO="end"
+
+ENV{ID_BUS}=="usb", ENV{ID_V4L_CAPABILITIES}=="*:capture:*", ENV{DEVNAME}=="/dev/video*", SYMLINK+="usb_capture"
+
+LABEL="end"
