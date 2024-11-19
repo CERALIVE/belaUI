@@ -1,0 +1,15 @@
+{
+  "watch": [
+    "./**"
+  ],
+  "exec": "kill-port 80 8080 && node belaUI.js",
+  "ext": "js ts json html",
+  "ignore": [
+    "node_modules",
+    "dns_cache.json",
+    "config.json",
+    "nodemon.json"
+  ],
+  "delay": 500
+}
+

@@ -1,4 +1,12 @@
-auth_tokens.json
+# IDE specific files
+.idea
+.vscode
+
+# Node files
 node_modules
 package-lock.json
-.idea
+
+# Generated JSON files
+dns_cache.json
+auth_tokens.json
+config.json
